@@ -1,0 +1,136 @@
+* {
+  background-color: #666;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  width: 600px;
+  padding: 0 200px;
+  text-align: center;
+}
+.wrap img {
+  width: 450px;
+  height: 450px;
+}
+.wrap h3 {
+  font-size: 22px;
+}
+.wrap button {
+  width: 200px;
+  margin-top: 100px;
+  font-size: 30px;
+  color: antiquewhite;
+  text-align: center;
+}
+.wrap2 {
+  width: 600px;
+  padding: 0 200px;
+  text-align: center;
+  display: none;
+}
+.wrap2 h2 {
+  margin-top: 100px;
+  font-size: 30px;
+  color: antiquewhite;
+}
+.wrap2 button {
+  width: 200px;
+  margin-top: 100px;
+  font-size: 30px;
+  color: antiquewhite;
+  text-align: center;
+  background-color: #999;
+}
+.wrap2 button:hover {
+  background-color: #f90;
+  cursor: pointer;
+}
+.main {
+  width: 600px;
+  padding: 0 200px;
+  text-align: center;
+  display: none;
+}
+.main ul li {
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+}
+.main button {
+  width: 200px;
+  margin-top: 50px;
+  font-size: 30px;
+  color: #666;
+  text-align: center;
+  background-color: #999;
+}
+.main button:hover {
+  background-color: #f90;
+  cursor: pointer;
+}
+.last {
+  width: 600px;
+  padding: 0 200px;
+  text-align: center;
+  display: none;
+}
+.last .use {
+  font-size: 20px;
+}
+.last .p:nth-child(1) {
+  margin-top: 100px;
+}
+.last .p span {
+  font-size: 20px;
+}
+.last .p .del {
+  margin-left: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.last .p .add {
+  cursor: pointer;
+  margin-left: 20px;
+}
+.last .p2 {
+  margin-top: 100px;
+}
+.last .p2 p {
+  color: antiquewhite;
+  font-size: 20px;
+  border: 1px solid burlywood;
+  margin: 10px 0;
+}
+.last .go {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: burlywood;
+  font-size: 30px;
+}
+.out {
+  width: 600px;
+  padding: 0 200px;
+  text-align: center;
+  display: none;
+}
+.out ul {
+  margin: 0 auto;
+  margin-bottom: 200px;
+}
+.out ul li {
+  margin-top: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+}
