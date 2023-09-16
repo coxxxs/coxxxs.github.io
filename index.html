@@ -1,1188 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>大鹅</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Richard hanrick">COXXXS</h1>
-
-          <p class="title">www.coxxxs.top</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>展开</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">邮箱</p>
-
-              <a href="mailto:coxxxs@qq.com" class="contact-link">coxxxs@qq.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">电话</p>
-
-              <a href="tel:+861747416****" class="contact-link">+86 1747416****</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">生日</p>
-
-              <time datetime="1998-12-18">?</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">坐标</p>
-
-              <address>中国</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-         
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-discord"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-wechat"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>首页</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>进程</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>网站</button>
-          </li>
-<!--
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>其他</button>
-          </li>
- -->
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>联系</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="首页  active" data-page="首页">
-
-        <header>
-          <h2 class="h2 article-title">关于</h2>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>旷野·WILDERNESS</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="" class="nav__logo-img"> 
+                    旷野·WILDERNESS
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">首页</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#celebrate" class="nav__link">关于</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gift" class="nav__link">热门</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">New</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+
+                    <img src="assets/img/nav-light.png" alt="" class="nav__img">
+                </div>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!-- Toggle button -->
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+
+            </nav>
         </header>
 
-        <section class="about-text">
-          <p>
-            本站持<b>免费</b>原则，供大家学习
-            <p>一人一号联系微信：<b>DuanCYao</b></b>
-          </p>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
 
-          <p>
-            每个月固定发放120$的OpenAi的API额度使用，用完即止
-          </p>
-        </section>
+                    <div class="home__data">
+                        <ion-icon name="location-outline"></ion-icon> 
+                        <h1 class="home__title">凡心所向 <br> 一苇以航</h1>
+                        <p class="home__description">
+                            <ion-icon name="location-outline"></ion-icon> 地址：湖南省郴州市苏仙区湘南学院
+                        </p>
+                        <a href="shop/Market/index.html" class="button">查看</a>
 
+                    </div>
+                    
+                </div>
+            </section>
 
-        <!--
-          - service
-        -->
+            <!--==================== GIVING ====================-->
+            <section class="giving section container">
+                <h2 class="section__title">
+                    使用说明
+                </h2>
 
-        <section class="service">
+                <div class="giving__container grid">
+                    <div class="giving__content">
+                        <img src="assets/img/giving1.png" alt="" class="giving__img">
+                        <h3 class="giving__title">活动</h3>
+                        <p class="giving__description">内容</p>
+                    </div>
 
-          <h3 class="h3 service-title">. . . . . . .</h3>
+                    <div class="giving__content">
+                        <img src="assets/img/giving2.png" alt="" class="giving__img">
+                        <h3 class="giving__title">折扣</h3>
+                        <p class="giving__description">内容</p>
+                    </div>
 
-          <ul class="service-list">
+                    <div class="giving__content">
+                        <img src="assets/img/giving3.png" alt="" class="giving__img">
+                        <h3 class="giving__title">分享</h3>
+                        <p class="giving__description">内容</p>
+                    </div>
+                </div>
+            </section>
 
-            <li class="service-item">
+            <!--==================== CELEBRATE ====================-->
+            <section class="celebrate section container" id="celebrate">
+                <div class="celebrate__container grid">
+                    <div class="celebrate__data">
+                        <h2 class="section__title celebrate__title">
+                        关于 <br> 我们
+                        </h2>
+                        <p class="celebrate__description">
+                        这里写你们的自我介绍就行了，可以写一小部分，剩下的留给下面的按钮页面
+                        </p>
+                        <a href="#" class="button">展开说说</a>
+                    </div>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
+                    <img src="assets/img/celebrate.png" alt="" class="celebrate__img">
+                </div>
+            </section>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">design</h4>
+            <!--==================== GIFT ====================-->
+            <section class="gift section container" id="gift">
+                <h2 class="section__title">热销</h2>
 
-                <p class="service-item-text">
-                  Visual Studio Code
-                </p>
-              </div>
+                <div class="gift__container grid">
+                    <article class="gift__card">
+                        <img src="assets/img/gift1.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">$15</h3>
+                        <span class="gift__title">抠图的衣服图片</span>
+                    </article>
 
-            </li>
+                    <article class="gift__card">
+                        <img src="assets/img/gift2.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">$22</h3>
+                        <span class="gift__title">抠图的衣服图片</span>
+                    </article>
 
-            <li class="service-item">
+                    <article class="gift__card">
+                        <img src="assets/img/gift3.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">$48</h3>
+                        <span class="gift__title">抠图的衣服图片</span>
+                    </article>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
+                    <article class="gift__card">
+                        <img src="assets/img/gift4.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">$35</h3>
+                        <span class="gift__title">抠图的衣服图片</span>
+                    </article>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                    <article class="gift__card">
+                        <img src="assets/img/gift5.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">$12</h3>
+                        <span class="gift__title">抠图的衣服图片</span>
+                    </article>
 
-                <p class="service-item-text">
-                 Html css js
-                </p>
-              </div>
+                    <article class="gift__card">
+                        <img src="assets/img/gift5.png" alt="" class="gift__img">
+                        <i class='bx bx-heart gift__icon'></i>
+                        
+                        <h3 class="gift__price">$12</h3>
+                        <span class="gift__title">抠图的衣服图片</span>
+                    </article>
+                </div>
+            </section>
 
-            </li>
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">新品上架</h2>
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
 
-            <li class="service-item">
+                                <img src="assets/img/new1.png" alt="" class="new__img">
+                                <h3 class="new__price">$xx</h3>
+                                <span class="new__title">详细</span>
+                                
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">apps</h4>
+                                <img src="assets/img/new2.png" alt="" class="new__img">
+                                <h3 class="new__price">$20</h3>
+                                <span class="new__title">详细</span>
 
-                <p class="service-item-text">
-                   iOS 
-                </p>
-              </div>
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
 
-            </li>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
 
-            <li class="service-item">
+                                <img src="assets/img/new3.png" alt="" class="new__img">
+                                <h3 class="new__price">图片大小不一</h3>
+                                <span class="new__title">展现出来的效果不同，我给你们都选择了不一样的尺寸，自行决定</span>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                            <article class="new__card swiper-slide">
+                                <div class="new__overlay"></div>
 
-                <p class="service-item-text">
-                  有记录但没放在这儿
-                </p>
-              </div>
+                                <img src="assets/img/new4.png" alt="" class="new__img">
+                                <h3 class="new__price">$15</h3>
+                                <span class="new__title">详细</span>
 
-            </li>
+                                <button class="button new__button">
+                                    <i class='bx bx-heart new__icon'></i>
+                                </button>
+                            </article>
+                        </div>
 
-          </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
 
-        </section>
+            <!--==================== MESSAGE ====================-->
+            <section class="message section container">
+                <div class="message__container grid">
+                    <form action="" class="message__form">
+                        <h2 class="message__title">一份使用说明 <br> ⬇️⬇️⬇️</h2>
+                        <a href="about/index.html" class="button message__button">点击我！</a>
+                    </form>
 
+                    <img src="assets/img/message.png" alt="" class="message__img">
+                </div>
+            </section>
+        </main>
 
-        <!--
-          - testimonials
-        
-        <section class="testimonials">
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div>
+                    <a class="footer__logo">
+                        <img src="assets/img/logo.png" alt="" class="footer__logo-img"> 
+                        这个你们可自己定义
+                    </a>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                    <p class="footer__description">
+                        这个 <br> 也是一样的
+                    </p>
                 </div>
 
-              </div>
-            </li>
+                <div>
+                    <h3 class="footer__title">感谢赞助</h3>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">瞎编就行</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">瞎编就行</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">瞎编就行</a>
+                        </li>
+                    </ul>
                 </div>
 
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
--->
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
--->
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="进程" data-page="进程">
-
-        <header>
-          <h2 class="h2 article-title">进程</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">学习</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">*******</h4>
-
-              <span>20** — 20**</span>
-
-              <p class="timeline-text">
-                *****************************************
-                
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">*******</h4>
-
-              <span>20** — 20**</span>
-
-              <p class="timeline-text">
-                *****************************************
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">*******</h4>
-
-              <span>20** — 20**</span>
-
-              <p class="timeline-text">
-                *****************************************
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">毕业</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">*******</h4>
-
-              <span>20** — 20**</span>
-
-              <p class="timeline-text">
-                *****************************************
                
-              </p>
 
-            </li>
+                <div>
+                    <h3 class="footer__title">自己定义</h3>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">*******</h4>
-
-              <span>20** — 20**</span>
-
-              <p class="timeline-text">
-                *****************************************
-               
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">*******</h4>
-
-              <span>20** — 20**</span>
-
-              <p class="timeline-text">
-                *****************************************
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">已完成</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">*******</h5>
-                <data value="30">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">*******</h5>
-                <data value="10">10%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 10%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">*******</h5>
-                <data value="35">35%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 35%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">*******</h5>
-                <data value="12">12%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 12%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="网站" data-page="网站">
-
-        <header>
-          <h2 class="h2 article-title">网站</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-<!--
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
--->
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>选择</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-<!--
-              <li class="select-item">
-                <button data-select-item>WebGPT</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
--->
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-<!--
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
--->
-<!--
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
--->
-            <li class="project-item  active" data-filter-item data-category="webGPT">
-              <a href="http://www.coxxxs.top">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ChatGPT</h3>
-
-                <p class="project-category">访问密码：0326</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-<!--
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Brawlhalla</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
--->
-<!--
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
--->
-<!--
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">MetaSpark</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
- -->
-<!--
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Summary</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
- -->
- <!--
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Task Manager</h3>
-
-                <p class="project-category">Applications</p>
-
-              </a>
-            </li>
- -->
-<!--
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Arrival</h3>
-
-                <p class="project-category">Web development</p>
--->
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="其他" data-page="其他">
-        <header>
-          <h2 class="h2 article-title">其他</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
+                    <div class="footer__aviables">
+                        <img src="assets/img/aviable1.png" alt="" class="footer__aviable-img">
+                        <img src="assets/img/aviable2.png" alt="" class="footer__aviable-img">
+                    </div>
                 </div>
 
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="联系" data-page="联系">
-
-        <header>
-          <h2 class="h2 article-title">联系</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.amap.com/search?id=B02DF006KG&city=431003&geoobj=116.19567%7C38.511771%7C119.179206%7C39.805782&query_type=IDQ&query=%E8%8B%8F%E4%BB%99%E5%B2%AD&zoom=8.82"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">这儿联系</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="email" name="fullname" class="form-input" placeholder="填写名字" required data-form-input>
-              <!--上面填写text-->
-              <input type="email" name="email" class="form-input" placeholder="邮箱" required data-form-input>
+                <img src="assets/img/footer1.png" alt="" class="footer__img1">
+                <img src="assets/img/footer2.png" alt="" class="footer__img2">
             </div>
 
-            <textarea name="message" class="form-input" placeholder="内容" required data-form-input></textarea>
+            <span class="footer__copy">&#169; 欢迎光临（自己编辑也可）</span>
+        </footer>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>不让联系喽</span>
-            </button>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
 
-          </form>
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
 
-        </section>
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
